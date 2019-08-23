@@ -1,5 +1,5 @@
 {
-	"name": "cartalyst/sentry",
+	"name": "mertyildiran/sentry",
 	"description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
 	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana"],
 	"license": "BSD-3-Clause",
@@ -27,6 +27,11 @@
 			"name": "Bruno Gaspar",
 			"email": "bruno.gaspar@cartalyst.com",
 			"role": "Developer"
+		},
+		{
+			"name": "M. Mert Yildiran",
+			"email": "mehmetmertyildiran@gmail.com",
+			"role": "Maintainer"
 		}
 	],
 	"require": {
