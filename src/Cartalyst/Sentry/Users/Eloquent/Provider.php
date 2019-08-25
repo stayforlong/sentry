@@ -158,7 +158,7 @@ class Provider implements ProviderInterface {
 			}
 			else if ($credential == $passwordName)
 			{
-				if (method_exists($this->hasher, 'needsRehashed') && 
+				if (method_exists($this->hasher, 'needsRehashed') &&
 					$this->hasher->needsRehashed($user->{$credential}))
 				{
 					// The algorithm used to create the hash is outdated and insecure.

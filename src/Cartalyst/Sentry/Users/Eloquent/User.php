@@ -87,7 +87,7 @@ class User extends Model implements UserInterface {
 	 *
 	 * @var string
 	 */
-	protected static $loginAttribute = 'email';
+	protected static $loginAttribute = 'username';
 
 	/**
 	 * The hasher the model uses.
