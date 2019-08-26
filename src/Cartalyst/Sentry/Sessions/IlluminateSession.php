@@ -81,14 +81,7 @@ class IlluminateSession implements SessionInterface {
 	 */
 	public function get()
 	{
-		//return $this->session->get($this->getKey());
-		$key = $this->getKey();
-        if (array_key_exists($key, $_COOKIE)) {
-            // Replace it with a correct decoding method
-            return explode('`', base64_decode($_COOKIE[$key]));
-        } else {
-            return null;
-        }
+		return $this->session->get($this->getKey());
 	}
 
 	/**

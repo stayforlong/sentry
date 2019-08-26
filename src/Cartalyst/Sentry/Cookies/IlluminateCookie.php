@@ -111,10 +111,8 @@ class IlluminateCookie implements CookieInterface {
 	 */
 	public function forever($value)
 	{
-		//$cookie = $this->jar->forever($this->getKey(), $value);
-		//$this->jar->queue($cookie);
-		// Replace it with a correct encoding method
-        setcookie($this->getKey(), base64_encode(implode('`', $value)));
+	    $cookie = $this->jar->forever($this->getKey(), json_encode($value));
+	    $this->jar->queue($cookie);
 	}
 
 	/**
