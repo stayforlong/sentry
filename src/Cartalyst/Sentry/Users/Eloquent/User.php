@@ -131,6 +131,28 @@ class User extends Model implements UserInterface {
 	 */
 	protected static $userGroupsPivot = 'users_groups';
 
+	public static function boot()
+	{
+	    parent::boot();
+
+	    self::created(function($model){
+	        UserPassword::create([
+	            'user_id'  => $model->id,
+	            'password' => $model->password
+	        ]);
+	    });
+
+	    self::updated(function($model){
+	        $changes = $model->getDirty();
+	        if (array_key_exists($model->getPasswordName(), $changes)) {
+	            UserPassword::create([
+	                'user_id'  => $model->id,
+	                'password' => $model->password
+	            ]);
+	        }
+	    });
+	}
+
 	/**
 	 * Returns the user's ID.
 	 *
