@@ -1,7 +1,7 @@
 {
-	"name": "mertyildiran/sentry",
+	"name": "macellan/sentry",
 	"description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
-	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana"],
+	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana", "macellan"],
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
@@ -64,7 +64,7 @@
 	},
 	"extra": {
 		"component": "package",
-		"frameworks": ["Laravel 3", "Laravel 4", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
+		"frameworks": ["Laravel 3", "Laravel 4", "Laravel 5", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
 		"versions": {
 			"1": "1.1/master",
 			"2": "master"
