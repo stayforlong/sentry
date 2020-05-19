@@ -1,5 +1,5 @@
 {
-	"name": "macellan/sentry",
+	"name": "stayforlong/sentry",
 	"description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
 	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana", "macellan"],
 	"license": "BSD-3-Clause",
